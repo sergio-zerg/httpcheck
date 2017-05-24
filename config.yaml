@@ -1,0 +1,19 @@
+test_check:
+  ip: 127.0.0.1
+  protocols: [http,https] #array of protocols
+  domains: ['localhost:8080'] #array of domains
+  auth: {
+    username: myusername,
+    password: mypassword
+    }
+  path: '/admin'
+  method: GET
+#  params:
+#    get: {a: 10, b: qwerty}
+#    post: {c: 20, d: 39}
+#    file: {path: }
+#    json: {path: }
+#    xml: {path: }
+  format: text #text,xml,json,yaml
+  status: 200 #http-status
+  response: 'Hello authenticated user: myusername from: /admin/ '
