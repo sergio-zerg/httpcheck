@@ -21,7 +21,7 @@ func flags() []cli.Flag {
 		cli.StringFlag{
 			Name:   "env, e",
 			Value:  "dev",
-			Usage:  "dev: input - set with flag -c (default config.yaml), output - stdout. prod: input - consul, output - sensu",
+			Usage:  "dev: input - set with flag -c (default checks.yaml), output - stdout. prod: input - consul, output - sensu",
 			EnvVar: "HTTPCHECK_ENV",
 		},
 		cli.StringFlag{
@@ -32,7 +32,7 @@ func flags() []cli.Flag {
 		},
 		cli.StringFlag{
 			Name:   "config, f",
-			Value:  "config.yaml",
+			Value:  "checks.yaml",
 			Usage:  "ip-address for checks",
 			EnvVar: "HTTPCHECK_CONFIG",
 		},
