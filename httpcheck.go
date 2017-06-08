@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/urfave/cli"
 	"github.com/sergio-zerg/httpcheck/engine"
+	"github.com/urfave/cli"
 	"os"
 	"sort"
 	"time"
@@ -73,6 +73,6 @@ func main() {
 		core.Run()
 	}
 	sort.Sort(cli.FlagsByName(app.Flags))
-	sort.Sort(cli.CommandsByName(app.Commands))
+	//sort.Sort(cli.CommandsByName(app.Commands))
 	app.Run(os.Args)
 }
