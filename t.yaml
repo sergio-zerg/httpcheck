@@ -1,0 +1,4 @@
+proweb-web:
+  domains:
+    - proweb.cc
+  status: 200
