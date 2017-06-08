@@ -148,15 +148,18 @@ func (c *Config) Apply(name string) []result.Result {
 			}
 
 			//check response equality
-			response := string(data)
-			if c.Response != response {
-				msg := fmt.Sprintf(msg_error_answer, c.Response, response)
-				has_errors = true
-				results = append(results, result.New(c.Ip, key, msg, has_errors))
+			if c.Response!=""{
+				response := string(data)
+				if c.Response != response {
+					msg := fmt.Sprintf(msg_error_answer, c.Response, response)
+					has_errors = true
+					results = append(results, result.New(c.Ip, key, msg, has_errors))
+				}
+				if !has_errors {
+					results = append(results, result.New(c.Ip, key, msg_success, has_errors))
+				}
 			}
-			if !has_errors {
-				results = append(results, result.New(c.Ip, key, msg_success, has_errors))
-			}
+
 		}
 	}
 	return results
