@@ -7,4 +7,4 @@
 * add to github
 * calculate duration for each check
 * add checks indicators like - https://github.com/shurshun/docker-health-bridge
-* validate - проверять 
+* validate - check valid consul api url && sensu api url
