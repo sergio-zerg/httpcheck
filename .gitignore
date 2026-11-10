@@ -1,22 +1,18 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Go template
-# Binaries for programs and plugins
+# Binaries
 *.exe
 *.dll
 *.so
 *.dylib
+/bin/
+/httpcheck
 
-# Test binary, build with `go test -c`
+# Test / coverage output
 *.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+coverage.*
 
-# Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
-.glide/
-vendor/
-.idea
-httpcheck
-httpcheck.iml
-/old.config.yaml
-
+# Editor / IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store

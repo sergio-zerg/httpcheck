@@ -1,19 +1,27 @@
-test_check:
-  ip: 127.0.0.1
-  protocols: [http,https] #array of protocols
-  domains: ['localhost:8080'] #array of domains
-  auth: {
-    username: myusername,
-    password: mypassword
-    }
-  path: '/admin'
+# Example checks for `httpcheck --env dev --config checks.yaml`.
+# Each top-level key is a check name.
+
+example_homepage:
+  protocols: [https]
+  domains: [example.com]
+  path: /
   method: GET
-#  params:
-#    get: {a: 10, b: qwerty}
-#    post: {c: 20, d: 39}
-#    file: {path: }
-#    json: {path: }
-#    xml: {path: }
-  format: text #text,xml,json,yaml
-  status: 200 #http-status
-  response: 'Hello authenticated user: myusername from: /admin/ '
+  status: 200
+  format: text        # text | json | xml | yaml
+  timeout: 10         # seconds
+
+# httpbin_json:
+#   protocols: [https]
+#   domains: [httpbin.org]
+#   path: /json
+#   status: 200
+#   format: json
+
+# basic_auth_demo:
+#   protocols: [https]
+#   domains: [httpbin.org]
+#   path: /basic-auth/user/pass
+#   status: 200
+#   auth:
+#     username: user
+#     password: pass

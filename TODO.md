@@ -1,10 +1,13 @@
-* logging - add debug points via log.Debug(data)
-* delete LINKS.md
-* write documentation
-* write examples
-* write build & install make file with versioning
-* write tests
-* add to github
-* calculate duration for each check
-* add checks indicators like - https://github.com/shurshun/docker-health-bridge
-* validate - check valid consul api url && sensu api url
+# TODO
+
+Planned functional improvements (not blocking; the tool is complete for its
+current scope).
+
+- **Request bodies / params** — support POST form, JSON and XML bodies via the
+  `params` field (currently parsed but unused).
+- **Retries** — optional retry count with backoff per check before reporting an
+  error.
+- **Validate URLs** — validate the Consul and Sensu API URLs on startup in prod.
+- **Health indicators** — expose per-check status indicators, e.g. in the style of
+  <https://github.com/shurshun/docker-health-bridge>.
+- **cmd/ layout** — if the surface grows, move `main.go` into `cmd/httpcheck/`.
