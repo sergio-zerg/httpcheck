@@ -1,3 +1,5 @@
+**English** | [Русский](README.ru.md)
+
 <p align="center"><img src="docs/cover.png" alt="httpcheck" width="100%"></p>
 
 # httpcheck
@@ -15,7 +17,7 @@ definitions pulled from **Consul KV**) for a monitoring setup.
 > A pet project: a compact, dependency-light Go tool kept as a tidy example of a
 > CLI with a file/stdout path for development and a Consul→Sensu path for
 > production. Originally written in 2017, modernized in 2026 (Go modules, current
-> libraries, tests, CI).
+> libraries, tests, CI). What is next — [roadmap](ROADMAP.md).
 
 ## What it does
 
