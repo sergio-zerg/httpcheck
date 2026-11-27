@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/cover.png" alt="httpcheck" width="100%"></p>
+
 # httpcheck
 
 [![CI](https://github.com/sergio-zerg/httpcheck/actions/workflows/ci.yml/badge.svg)](https://github.com/sergio-zerg/httpcheck/actions/workflows/ci.yml)
